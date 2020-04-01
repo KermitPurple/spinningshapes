@@ -14,6 +14,9 @@ class Spinner{
 			colorMode(HSB);
 			let x = this.r * cos(this.theta);
 			let y = this.r * sin(this.theta);
+			let c = color(0);
+			c.setAlpha(0.25);
+			stroke(c);
 			fill(map(this.theta % TWO_PI, 0, TWO_PI, 0, 360), 100, 100);
 			circle(x, y, this.smallr);
 			new Spinner(this.r * 0.97, this.theta * 0.97, this.smallr * 0.97).draw();
