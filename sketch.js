@@ -1,5 +1,5 @@
 let spinner;
-let r = 250;
+let r = 280;
 
 function setup(){
 	createCanvas(600,600);
